@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "ac91b8df-881a-46a1-ab31-6b099517347d",
+		"name": "HappyOnline",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15302877"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Logged In User",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Update Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE3NjM3MTUxNjIsImV4cCI6MTc2MzcxODc2MiwibmJmIjoxNzYzNzE1MTYyLCJqdGkiOiJjaTNnQjZ3eDJNVVlidU1QIiwic3ViIjoiMTciLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.sLH4CwSsmUkBeZaPUB62LIJZ0I2NIgM6uCP1QDLH57thz16O_EWR_-Pw8hnbwMXq8fp18E0y8KFtedX9Vax5eS5gF38S205H3rMwJm6sBgOFzMAzAROLnc877MKt72hCcOqb1dwRQQPud6XatqfKLho1RGPctgZdyRcOQtcaaZrIKaCgeLPCwc9pAGKiv5AxkmLw2YR9q9Wri3TDQv3jws7eQGCwptreMy8jvtvr7fgAsOlEjEmFjw4pPEup0JzFWrjPr8JzRe3SolDNgrF1npc-_NgbSZwhhiUvP2Umnx6uXeG-F649iM1DBKZAHn9f3tuqWkpsKZYtn38kB9SYDt9IuHzQE9CGRNoa-5MVzVxbEjhiQtxZ3HEPlddz29488oXar4I_HrlhT1hARjx8qCTtw1PSYEGRpBaidKqOPrXRPANJwiFafDAE6NkZuoOqaPjiOTC2IYCix7yyF_84A856JygAmtHd7a8d6uc7NutWqJI78W8I6tU1DXnYL5k1VE0XQCxnf6XkdI05qcvN9_iuyTdRHEtSXyBe3GnQ1Y1zM4WbXVNY3Ml_3uphfFS7bjX0azd64uoEpnbbvzQ0YoYMgooj1g61nIZ_zf_TIOKOW6Oe9Q8eVtnG57SmVCDGXbsNJRtWw5F1QcFqBD6nKyHbGOzIqU3oIQlTA3M8Cq0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"This is a comsment edited.\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/comments/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"comments",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Comment",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Comments By User",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get All Categories",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Get All Posts",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Post",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateExisitng Post",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create New Post",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
