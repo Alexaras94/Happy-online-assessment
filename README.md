@@ -56,7 +56,6 @@ This application manages **Users, Posts, Comments, Categories, and Tags** using 
 
 ```bash
 git clone <your-repo-url>
-cd happy-online-api
 ```
 
 ### 2. Install Dependencies
@@ -145,24 +144,8 @@ A full **OpenAPI (Swagger)** specification is available in the `http://localhost
 
 
 
-```bash
-php artisan test
-```
 
-### Manual Testing (Postman)
 
-- **Login:**  
-  Send a POST request to `/api/auth/login` to obtain a Bearer Token.
-
-- **Authorization:**
-  ```
-  Authorization: Bearer <token>
-  ```
-
-- **Filters Example:**
-  ```
-  GET /api/posts?tag=laravel&author_id=1
-  ```
 
 
 ---
